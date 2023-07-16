@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Random from './comonents/Random';
+import Tag from './comonents/Tag';
+// pudtpGHuY0gHN9HOOvsLga2w7gRdCOjQ
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return ( 
+
+    <div className='w-full h-screen flex flex-col background relative overflow-x-hidden items-center'>
+
+      <h1 className=' rounded-sm  w-11/12 text-center mt-[40px] px-10 y-2 text-4xl font-bold'>GIF Generator</h1>
+
+      <div className='flex flex-col w-full items-center '>
+        <Random/>
+        <Tag/>     
+      </div>
+
     </div>
+
   );
 }
 
